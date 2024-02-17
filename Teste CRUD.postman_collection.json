@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "36deaeb6-6095-4fd1-b09b-6bd3c59fe2f1",
+		"name": "Teste CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32815097"
+	},
+	"item": [
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "856",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Mircea",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Batranu",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://qachallenge.ro/api/test_api.php?action=update",
+					"protocol": "http",
+					"host": [
+						"qachallenge",
+						"ro"
+					],
+					"path": [
+						"api",
+						"test_api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "update"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Daniel",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Cont",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://qachallenge.ro/api/test_api.php?action=insert",
+					"protocol": "http",
+					"host": [
+						"qachallenge",
+						"ro"
+					],
+					"path": [
+						"api",
+						"test_api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "insert"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://qachallenge.ro/api/test_api.php?action=delete&id=880",
+					"protocol": "http",
+					"host": [
+						"qachallenge",
+						"ro"
+					],
+					"path": [
+						"api",
+						"test_api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "delete"
+						},
+						{
+							"key": "id",
+							"value": "880"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://qachallenge.ro/api/test_api.php?action=fetch_single&id=857",
+					"protocol": "http",
+					"host": [
+						"qachallenge",
+						"ro"
+					],
+					"path": [
+						"api",
+						"test_api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "fetch_single"
+						},
+						{
+							"key": "id",
+							"value": "857"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
